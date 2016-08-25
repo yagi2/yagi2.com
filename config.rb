@@ -9,6 +9,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :slim, { format: :html, pretty: :false }
+set :sass, { style: :expanded, syntax: :scss }
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -36,4 +39,8 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+end
+
+configure :development do
+  activate :livereload
 end
