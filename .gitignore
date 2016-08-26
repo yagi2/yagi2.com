@@ -24,3 +24,5 @@
 local_deploy.sh
 local_stage.sh
 build.sh
+
+/vendor
