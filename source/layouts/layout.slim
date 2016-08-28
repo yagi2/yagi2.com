@@ -9,6 +9,8 @@ html
     = stylesheet_link_tag :site
     = javascript_include_tag :all
     = favicon_tag '/images/profile_t.png'
+    - if build?
+      = google_analytics_universal_tag
   |  <body class="
   = page_classes
   | "> 

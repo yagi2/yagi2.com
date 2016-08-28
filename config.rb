@@ -44,3 +44,7 @@ end
 configure :development do
   activate :livereload
 end
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-28203375-8'
+end
