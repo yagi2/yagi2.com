@@ -6,6 +6,9 @@ body {
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 .logo img {
@@ -13,6 +16,17 @@ body {
   border-radius: 80%;
   width:  18.75em;
   height: 18.75em;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .link {
