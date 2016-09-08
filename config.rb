@@ -36,7 +36,7 @@ set :sass, { style: :expanded, syntax: :scss }
 configure :build do
   # Minify CSS on build
   # activate :minify_css
-
+   activate :gzip
   # Minify Javascript on build
   # activate :minify_javascript
 end
