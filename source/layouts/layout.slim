@@ -1,4 +1,4 @@
-| <!doctype html> 
+| <!doctype html>
 html
   head
     meta[content="IE=edge" http-equiv="X-UA-Compatible"]
@@ -8,10 +8,13 @@ html
     link[href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"]
     = stylesheet_link_tag :site
     = javascript_include_tag :all
+    = javascript_include_tag :"jquery.particleground.min"
+    = javascript_include_tag :"particle.set"
+    = javascript_include_tag :"jquery-1.11.1.min"
     = favicon_tag '/images/profile_t.png'
     - if build?
       = google_analytics_universal_tag
   |  <body class="
   = page_classes
-  | "> 
+  | ">
   = yield
