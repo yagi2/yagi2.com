@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "normalize";
+@import "koruri.css.scss";
 
 body {
   text-align: center;
@@ -41,7 +42,7 @@ link {
 
 h1 {
   color: #000000;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Koruri-Bold;
   font-size: 3em;
   font-weight: 400;
   margin: 1em;
