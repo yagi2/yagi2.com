@@ -22,5 +22,5 @@ deployment:
     branch: master
     commands:
       - aws s3 sync build s3://$S3_BACKET
-      - aws cloudfront create-invalidation --distribution-id $CF_DIST_1
-      - aws cloudfront create-invalidation --distribution-id $CF_DIST_2
+      - aws cloudfront create-invalidation --distribution-id $CF_DIST_1 --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id $CF_DIST_2 --paths "/*"
