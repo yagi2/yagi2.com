@@ -21,6 +21,6 @@ deployment:
   push_to_server:
     branch: master
     commands:
-      - aws sync s3 build s3://$S3_BACKET
+      - aws s3 sync build s3://$S3_BACKET
       - aws cloudfront create-invalidation --distribution-id CF_DIST_1
       - aws cloudfront create-invalidation --distribution-id CF_DIST_2
