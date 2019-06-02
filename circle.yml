@@ -24,4 +24,3 @@ deployment:
       - aws s3 sync build s3://$S3_BACKET > /dev/null 2>&1
       - aws cloudfront create-invalidation --distribution-id $CF_DIST_1 --paths "/*" > /dev/null 2>&1
       - aws cloudfront create-invalidation --distribution-id $CF_DIST_2 --paths "/*" > /dev/null 2>&1
-      - aws cloudfront create-invalidation --distribution-id $CF_DIST_3 --paths "/*" > /dev/null 2>&1
